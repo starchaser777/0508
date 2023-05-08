@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #menu {
+            width: 260px;
+            float: left;
+        }
+
+        #section {
+            width: 700px;
+            float: right; /* left로 입력해도 상관없습니다. */
+        }
+
+        li {
+            list-style: none;
+        }
+
+        /* 스마트폰인 경우 */
+        @media screen and (max-width: 767px) {
+            body {
+                width: auto;
+            }
+            #menu {
+                width: auto;
+                float: none;
+            }
+            #section {
+                width: auto;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, tempora exercitationem ea illo aperiam reprehenderit magni porro maiores ullam vero velit odio maxime sapiente, ipsam quos voluptate quo cumque non.</p>
+    </div>
+</body>
+</html>
